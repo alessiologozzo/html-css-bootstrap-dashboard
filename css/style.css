@@ -1,0 +1,91 @@
+:root{
+    --header_height: 60px;
+    --aside_width: 55px;
+    --aside_color: #0f263c;
+    --section_color: #1b72e8;
+}
+
+.al-header-height{
+    height: var(--header_height);
+}
+
+.al-logo-container{
+    height: var(--header_height);
+}
+
+.al-mobile-logo{
+    height: calc(var(--header_height) / 2);
+    transform: scale(1.6) translateX(30%);
+}
+
+.al-width{
+    width: 100%;
+}
+
+nav form button{
+    height: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    padding-left: 7px;
+    background-color: transparent;
+    border: none;
+}
+
+nav form input[type="search"]{
+    padding-left: 1.8rem;
+    background-color: #e5e5e5;
+}
+
+.al-text-orange{
+    color: #ff8f00;
+}
+
+.al-margin_header{
+    margin-top: var(--header_height);
+}
+
+.main-element-height{
+    height: calc(100vh - var(--header_height));
+}
+
+aside{
+    background-color: var(--aside_color);
+    width: var(--aside_width);
+    overflow-y: hidden;
+}
+
+.al-dim{
+    width: 20px;
+}
+
+aside a{
+    transition: transform 300ms;
+}
+
+aside a i, aside a strong{
+    transition: color 300ms;
+}
+
+aside a:hover{
+    transform: scale(1.1);
+}
+
+aside a:hover i, aside a:hover strong{
+    color: #aeff2f;
+}
+
+main{
+    width: calc(100vw - var(--aside_width));
+}
+
+@media screen and (min-width: 768px){
+    
+    :root{
+        --aside_width: 120px;       
+    }
+
+    .al-width{
+        width: 90%;
+    }
+}
