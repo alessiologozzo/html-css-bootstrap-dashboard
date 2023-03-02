@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- /font awesome -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>html-css-bootstrap-dashboard</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                             </form>
                         </li>
                         <li class="nav-item dropdown d-none d-md-block">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link al-hover-scale al-hover-grey-to-green" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-bars"></i>
                             </a>
                             <ul class="dropdown-menu" style="right: 0; left: auto;">
@@ -45,7 +45,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown d-none d-md-block">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link al-hover-scale al-hover-grey-to-green" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-question"></i>
                             </a>
                             <ul class="dropdown-menu" style="right: 0; left: auto;">
@@ -58,7 +58,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown d-none d-md-block">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link al-hover-scale al-hover-grey-to-green" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-ellipsis-vertical"></i>
                             </a>
                             <ul class="dropdown-menu" style="right: 0; left: auto;">
@@ -71,7 +71,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown pe-2">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link al-hover-scale" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-bell al-text-orange"></i>
                             </a>
                             <ul class="dropdown-menu" style="right: 5px; left: auto;">
@@ -93,19 +93,19 @@
         <aside class="main-element-height text-white text-capitalize d-flex flex-column">
             <ul class="d-flex flex-column gap-3 gap-md-2 list-unstyled pt-4 ps-3">
                 <li class="d-flex justify-content-start">
-                    <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none">
+                    <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none al-hover-scale al-hover-white-to-green">
                         <i class="al-dim fa-solid fa-house"></i>
                         <strong class="d-none d-md-inline">home</strong>
                     </a>
                 </li>
                 <li class="d-flex justify-content-start">
-                    <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none">
+                    <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none al-hover-scale al-hover-white-to-green">
                         <i class="al-dim fa-solid fa-chart-simple"></i>
                         <strong class="d-none d-md-inline">stats</strong>
                     </a>
                 </li>
                 <li class="d-flex justify-content-start">
-                    <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none">
+                    <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none al-hover-scale al-hover-white-to-green">
                         <i class="al-dim fa-solid fa-signal"></i>
                         <strong class="d-none d-md-inline">signals</strong>
                     </a>
@@ -114,7 +114,7 @@
 
             <ul class="d-flex flex-column gap-3 gap-md-2 list-unstyled pt-1 ps-3 mt-auto">
                 <li class="d-flex justify-content-start">
-                    <a href="#" class="d-flex align-items-center justify-content-center gap-2 text-white text-decoration-none al-aside-hover">
+                    <a href="#" class="d-flex align-items-center justify-content-center gap-2 text-white text-decoration-none al-hover-scale al-hover-white-to-green">
                         <i class="al-dim fa-solid fa-gear"></i>
                         <strong class="d-none d-md-inline">admin</strong>
                     </a>
@@ -123,7 +123,507 @@
         </aside>
 
         <main class="main-element-height">
+            <section class="al-bg-blue py-4 ps-2 text-white">
+                <div class="row w-100">
+                    <div class="col-12 col-lg-4 col-xl-3 order-lg-3 d-flex justify-content-lg-end gap-3">
+                        <h6 class="text-capitalize">nuovo studente</h6>
+                        <button class="al-btn-plus" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="transform: translateY(-20%);">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
 
+                    <div class="col-12 col-lg-4 col-xl-6 order-lg-1 d-flex flex-column pt-2 pb-3 py-lg-0">
+                        <div class="d-flex align-items-center gap-2">
+                            <h4>Boolean</h4>
+                            <span class="badge rounded-pill al-bg-badge">Piano blaze</span>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="badge rounded-pill al-bg-badge">3 app</span>
+
+                            <div style="font-size: 0.9rem;">
+                                <i class="fa-solid fa-greater-than"></i>
+                                <i class="fa-solid fa-greater-than" style="margin-left: -5px;"></i>
+                            </div>
+
+                            <span class="badge rounded-pill al-bg-badge d-xl-none"><i class="fa-solid fa-plus"></i></span>
+
+                            <span class="badge rounded-pill al-bg-badge d-none d-xl-block">Boolean mobile app</span>
+
+                            <span class="badge rounded-pill al-bg-badge d-none d-xl-block">Boolean web app</span>
+
+                            <span class="badge rounded-pill al-bg-badge d-none d-xl-block">Boolean blog app</span>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-3 order-lg-2 text-nowrap">
+                        <h6>Studenti online negli ultimi 30 minuti</h6>
+                        <h4>125</h4>
+                    </div>
+                </div>
+
+
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 600px;">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title ps-3 text-black" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="text-capitalize text-black">
+                            <form>
+                                <div class="d-flex gap-3 px-3 pb-3">
+                                    <div class="col-6">
+                                        <label for="name" class="pb-1">nome</label>
+                                        <div>
+                                            <input type="text" id="name" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="surname" class="pb-1">cognome</label>
+                                        <div>
+                                            <input type="text" id="surname" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 px-3 pb-4">
+                                    <div class="col-6">
+                                        <label for="email" class="pb-1">email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">@</span>
+                                            <input type="text" id="email" class="form-control" aria-label="Server">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="password" class="pb-1">password</label>
+                                        <div>
+                                            <input type="password" id="password" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 px-3 pb-3">
+                                    <div class="col-6">
+                                        <label for="email2" class="pb-1">
+                                            <span class="d-block position-relative">
+                                                <span class="d-block al-translate-y-75">indirizzo</span>
+                                                <span class="d-block position-absolute bottom-0">e-mail</span>
+                                            </span>
+                                        </label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">@</span>
+                                            <input type="text" id="email2" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="password2" class="pb-1">password</label>
+                                        <div>
+                                            <input type="password" id="password2" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 ps-3 pb-3">
+                                    <label for="address" class="pb-1">indirizzo</label>
+                                    <div>
+                                        <input type="text" id="address" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 px-3 pb-3">
+                                    <div class="col-7">
+                                        <label for="city" class="pb-1">città</label>
+                                        <div>
+                                            <input type="text" id="city" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="stato" class="pb-1">stato</label>
+                                        <select id="stato" class="form-select">
+                                            <option selected>Scegli...</option>
+                                            <option value="1">Italia</option>
+                                            <option value="2">Inghilterra</option>
+                                            <option value="3">Francia</option>
+                                            <option value="3">Germania</option>
+                                            <option value="3">Spagna</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-2 pe-3">
+                                        <label for="cap" class="pb-1 text-uppercase">cap</label>
+                                        <div>
+                                            <input type="text" id="cap" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 ps-3 pb-3">
+                                    <label for="cap" class="pb-1">foto</label>
+                                    <div class="input-group mb-3">
+                                        <button class="btn al-bg-light-grey al-btn-hover" type="button" id="button-addon1">Scegli file</button>
+                                        <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    </div>
+                                </div>
+
+                                <div class="col-12  ps-3 d-flex gap-5">
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="check">
+                                        <label for="check">Seleziona per proseguire</label>
+                                    </div>
+
+                                    <div class="al-n-margin-top">
+                                        <button type="button" class="btn btn-primary me-1 text-capitalize">salva</button>
+                                        <button type="button" class="btn btn-warning text-capitalize">svuota</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="row w-100 ps-3 py-3">
+                    <div class="col-12 col-lg-8">
+
+                        <table class="table mb-4 al-td-height">
+                            <thead>
+                                <tr class="al-table-header-bg">
+                                    <th scope="col" colspan="5" class=" fs-4">Prossime classi</th>
+                                </tr>
+
+                                <tr style="line-height: 40px;">
+                                    <th scope="col">Nome</th>
+                                    <th scope="col" class="d-none d-lg-table-cell">Data inizio</th>
+                                    <th scope="col" class="d-none d-lg-table-cell">RQI</th>
+                                    <th scope="col">Stato</th>
+                                    <th scope="col">Azioni</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-img-td">
+                                            <img src="./img/class-avatar.jpg" alt="classimg" class="img-fluid">
+                                        </div>
+                                        <span>Classe 75</span>
+                                    </td>
+                                    <td class="d-none d-lg-table-cell">15 Febbraio 2021</td>
+                                    <td class="d-none d-lg-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge text-bg-success">Done</span>
+                                    </td>
+                                    <td class="d-flex  align-items-center gap-2">
+                                        <div class="al-square">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </div>
+
+                                        <div class="al-square al-red">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-img-td">
+                                            <img src="./img/class-avatar.jpg" alt="classimg" class="img-fluid">
+                                        </div>
+                                        <span>Classe 76</span>
+                                    </td>
+                                    <td class="d-none d-lg-table-cell">16 Febbraio 2021</td>
+                                    <td class="d-none d-lg-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge text-bg-success">Done</span>
+                                    </td>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-square">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </div>
+
+                                        <div class="al-square al-red">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-img-td">
+                                            <img src="./img/class-avatar.jpg" alt="classimg" class="img-fluid">
+                                        </div>
+                                        <span>Classe 77</span>
+                                    </td>
+                                    <td class="d-none d-lg-table-cell">17 Febbraio 2021</td>
+                                    <td class="d-none d-lg-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge text-bg-warning text-white">Process</span>
+                                    </td>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-square">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </div>
+
+                                        <div class="al-square al-red">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-img-td">
+                                            <img src="./img/class-avatar.jpg" alt="classimg" class="img-fluid">
+                                        </div>
+                                        <span>Classe 78</span>
+                                    </td>
+                                    <td class="d-none d-lg-table-cell">18 Febbraio 2021</td>
+                                    <td class="d-none d-lg-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge text-bg-success">Done</span>
+                                    </td>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-square">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </div>
+
+                                        <div class="al-square al-red">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-img-td">
+                                            <img src="./img/class-avatar.jpg" alt="classimg" class="img-fluid">
+                                        </div>
+                                        <span>Classe 79</span>
+                                    </td>
+                                    <td class="d-none d-lg-table-cell">19 Febbraio 2021</td>
+                                    <td class="d-none d-lg-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge text-bg-danger">Failed</span>
+                                    </td>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-square">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </div>
+
+                                        <div class="al-square al-red">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-img-td">
+                                            <img src="./img/class-avatar.jpg" alt="classimg" class="img-fluid">
+                                        </div>
+                                        <span>Classe 80</span>
+                                    </td>
+                                    <td class="d-none d-lg-table-cell">20 Febbraio 2021</td>
+                                    <td class="d-none d-lg-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge text-bg-success">Done</span>
+                                    </td>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-square">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </div>
+
+                                        <div class="al-square al-red">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-img-td">
+                                            <img src="./img/class-avatar.jpg" alt="classimg" class="img-fluid">
+                                        </div>
+                                        <span>Classe 81</span>
+                                    </td>
+                                    <td class="d-none d-lg-table-cell">21 Febbraio 2021</td>
+                                    <td class="d-none d-lg-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge text-bg-danger">Failed</span>
+                                    </td>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-square">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </div>
+
+                                        <div class="al-square al-red">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-img-td">
+                                            <img src="./img/class-avatar.jpg" alt="classimg" class="img-fluid">
+                                        </div>
+                                        <span>Classe 82</span>
+                                    </td>
+                                    <td class="d-none d-lg-table-cell">22 Febbraio 2021</td>
+                                    <td class="d-none d-lg-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge text-bg-success">Done</span>
+                                    </td>
+                                    <td class="d-flex gap-2">
+                                        <div class="al-square">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </div>
+
+                                        <div class="al-square al-red">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table mb-4">
+                            <thead>
+                                <tr class="al-table-header-bg">
+                                    <th scope="col" class="fs-4 text-uppercase">f.a.q.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>
+                                                <span class="d-flex justify-content-between">
+                                                    <span>Come aggiungere un nuovo studente?</span>
+                                                    <i class="fa-solid fa-chevron-down ps-2"></i>
+                                                </span>
+                                            </summary>
+                                            <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia temporibus praesentium eos nulla maiores nisi facere. Doloremque, fugit fuga sapiente asperiores itaque expedita, natus provident ipsa laborum beatae repudiandae ducimus aliquam officia cum magni maxime rerum. Voluptatem a ipsa magni.</p>
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>
+                                                <span class="d-flex justify-content-between">
+                                                    <span>Come posso accedere alle informazioni del mio account?</span>
+                                                    <i class="fa-solid fa-chevron-down ps-2"></i>
+                                                </span>
+                                            </summary>
+                                            <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia temporibus praesentium eos nulla maiores nisi facere. Doloremque, fugit fuga sapiente asperiores itaque expedita, natus provident ipsa laborum beatae repudiandae ducimus aliquam officia cum magni maxime rerum. Voluptatem a ipsa magni.</p>
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>
+                                                <span class="d-flex justify-content-between">
+                                                    <span>Posso usare questa dashboard da mobile?</span>
+                                                    <i class="fa-solid fa-chevron-down ps-2"></i>
+                                                </span>
+                                            </summary>
+                                            <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia temporibus praesentium eos nulla maiores nisi facere. Doloremque, fugit fuga sapiente asperiores itaque expedita, natus provident ipsa laborum beatae repudiandae ducimus aliquam officia cum magni maxime rerum. Voluptatem a ipsa magni.</p>
+                                        </details>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <table class="table mb-4">
+                            <thead>
+                                <tr class="al-table-header-bg">
+                                    <th scope="col" class="fs-4">Todo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table class="table mt-3 mx-auto" style="width: 95%">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="d-flex align-items-center gap-2">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <span>Kickoff nuove classi</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="d-flex align-items-center gap-2">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                                        <span>Lezione su bootstrap 5 in classe #75</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="d-flex align-items-center gap-2">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                                        <span>Controllare username github studenti</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table mb-4">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table class="table mt-3 mx-auto" style="width: 95%">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img src="./img/stats.jpeg" alt="stats" class="img-fluid">
+
+                                                        <h5>Utenti attivi</h5>
+                                                        <small>Lista degli utenti attivi in piattaforma nell'ultimo mese</small>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <small>Gennaio: 1200</small>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <small>Febbraio: 800</small>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <small>Marzo: 1500</small>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><small>Visualizza report approfondito</small></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
 

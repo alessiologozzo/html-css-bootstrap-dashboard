@@ -1,28 +1,28 @@
-:root{
+:root {
     --header_height: 60px;
     --aside_width: 55px;
     --aside_color: #0f263c;
     --section_color: #1b72e8;
 }
 
-.al-header-height{
+.al-header-height {
     height: var(--header_height);
 }
 
-.al-logo-container{
+.al-logo-container {
     height: var(--header_height);
 }
 
-.al-mobile-logo{
+.al-mobile-logo {
     height: calc(var(--header_height) / 2);
     transform: scale(1.6) translateX(30%);
 }
 
-.al-width{
+.al-width {
     width: 100%;
 }
 
-nav form button{
+nav form button {
     height: 100%;
     top: 50%;
     left: 0;
@@ -32,60 +32,204 @@ nav form button{
     border: none;
 }
 
-nav form input[type="search"]{
+nav form input[type="search"] {
     padding-left: 1.8rem;
     background-color: #e5e5e5;
 }
 
-.al-text-orange{
+.al-hover-grey-to-green i,
+.al-hover-grey-to-green strong {
+    color: #7c7c7c;
+    transition: color 300ms;
+}
+
+.al-hover-grey-to-green:hover i,
+.al-hover-grey-to-green:hover strong {
+    color: #aeff2f;
+}
+
+.al-hover-white-to-green i,
+.al-hover-white-to-green strong {
+    color: white;
+    transition: color 300ms;
+}
+
+.al-hover-white-to-green:hover i,
+.al-hover-white-to-green:hover strong {
+    color: #aeff2f;
+}
+
+.al-hover-scale {
+    transition: transform 300ms;
+}
+
+.al-hover-scale:hover {
+    transform: scale(1.1);
+}
+
+.al-text-orange {
     color: #ff8f00;
 }
 
-.al-margin_header{
+.al-margin_header {
     margin-top: var(--header_height);
 }
 
-.main-element-height{
+.main-element-height {
     height: calc(100vh - var(--header_height));
 }
 
-aside{
+aside {
+    background-image: url(../img/sidebar-bg.png);
     background-color: var(--aside_color);
     width: var(--aside_width);
     overflow-y: hidden;
 }
 
-.al-dim{
+.al-dim {
     width: 20px;
 }
 
-aside a{
-    transition: transform 300ms;
-}
-
-aside a i, aside a strong{
-    transition: color 300ms;
-}
-
-aside a:hover{
-    transform: scale(1.1);
-}
-
-aside a:hover i, aside a:hover strong{
-    color: #aeff2f;
-}
-
-main{
+main {
     width: calc(100vw - var(--aside_width));
 }
 
-@media screen and (min-width: 768px){
-    
-    :root{
-        --aside_width: 120px;       
+.al-bg-blue {
+    background-color: var(--section_color);
+}
+
+.al-bg-badge {
+    background-color: #165bba;
+}
+
+.al-translate-y-75 {
+    transform: translateY(-75%);
+}
+
+.al-bg-light-grey {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+}
+
+.al-n-margin-top {
+    margin-top: -0.5rem;
+}
+
+.al-btn-hover:hover {
+    background-color: #ced4da;
+}
+
+main {
+    overflow-y: auto;
+}
+
+.al-btn-plus {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: all 300ms;
+
+}
+
+.al-btn-plus:hover {
+    color: black;
+    border: 1px solid #aeff2f;
+    background-color: #aeff2f;
+}
+
+.al-table-header-bg {
+    background-color: #f7f7f7;
+}
+
+table {
+    border: 1px solid black;
+}
+
+.al-img-td {
+    width: 1.75rem;
+}
+
+.al-square {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    font-size: 0.8rem;
+    transition: all 300ms;
+}
+
+.al-square:hover {
+    color: black;
+    background-color: #aeff2f;
+    cursor: pointer;
+}
+
+.al-square.al-red:hover {
+    color: black;
+    background-color: #ff592f;
+    cursor: pointer;
+}
+
+th:first-of-type {
+    width: 60%;
+}
+
+th:nth-of-type(4) {
+    width: 20%;
+}
+
+th:last-of-type {
+    width: 20%;
+}
+
+.al-td-height td{
+    height: 48.5px;
+}
+
+summary {
+    display: block;
+    list-style: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    :root {
+        --aside_width: 120px;
     }
 
-    .al-width{
+    .al-width {
         width: 90%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    th:first-of-type {
+        width: 30%;
+    }
+
+    th:nth-of-type(2) {
+        width: 31%;
+    }
+
+    th:nth-of-type(3) {
+        width: 13%;
+    }
+
+    th:nth-of-type(4) {
+        width: 13%;
+    }
+
+    th:last-of-type {
+        width: 13%;
     }
 }
